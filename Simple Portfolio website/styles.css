@@ -1,0 +1,130 @@
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
+body{
+line-height:1.6;
+background-image: url("images/potfoliobackground.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+background-attachment:fixed;
+}
+
+/* header */
+header{
+background:#222;
+color:white;
+padding:15px;
+text-align:center;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+}
+
+nav ul li{
+margin:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* hero */
+.hero{
+text-align:center;
+padding:60px 20px;
+background:#0059ff;
+color:white;
+}
+
+.btn{
+display:inline-block;
+background:black;
+color:white;
+padding:10px 20px;
+margin-top:10px;
+text-decoration:none;
+}
+
+/* sections */
+section{
+padding:40px 20px;
+text-align:center;
+}
+
+/* cards */
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+width:250px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
+}
+
+/* table */
+table{
+margin:auto;
+border-collapse:collapse;
+}
+
+th,td{
+border:none;
+padding:10px;
+
+}
+
+/*images*/
+.profile{
+max-width:250px;
+height:auto;
+position: relative;
+}
+
+/* form */
+form{
+max-width:400px;
+margin:auto;
+display:flex;
+flex-direction:column;
+}
+
+input,textarea,button{
+margin:10px 0;
+padding:10px;
+}
+
+/* footer */
+footer{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+margin-top:20px;
+}
+
+/* responsive */
+@media(max-width:768px){
+.cards{
+flex-direction:column;
+align-items:center;
+}
+nav ul{
+flex-direction:column;
+}
+}
